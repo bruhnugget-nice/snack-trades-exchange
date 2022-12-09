@@ -1,0 +1,9 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Ubuntu-Regular.ttf);
+}
+  
+h2 {
+    font-family: myFirstFont;
+    color: black;
+}
