@@ -3,7 +3,7 @@
     src: url(Ubuntu-Regular.ttf);
 }
   
-h2 {
+body {
     font-family: myFirstFont;
     color: black;
 }
