@@ -33,11 +33,11 @@
      <br> This website was created solely for the purpose of listing out good exchange rates for snacks(just in case you want to reference them at lunchtime).
      <br> The website is currently under development right now, so do not expect much right now.<p>
      <script>
-     $('#theme').change(function() { 
-    var selectedValue = jQuery(this).val();
+      $('#theme').change(function() { 
+       var selectedValue = jQuery(this).val();
 
     //Depend on Value i.e. 0 or 1 respective function gets called. 
-    switch(selectedValue){
+      switch(selectedValue){
         case "light":
             letThereBeLight();
             break;
@@ -46,17 +46,17 @@
             break;
         default:
             break;
-    }
+      }
 
-function letThereBeLight(){
-    document.body.style.backgroundColor = "#dedede";
-    document.body.style.color = '#121212';
-}
+     function letThereBeLight(){
+       document.body.style.backgroundColor = "#dedede";
+       document.body.style.color = '#121212';
+     }
 
-function letThereBeDark(){
-    document.body.style.backgroundColor = "#121212";
-    document.body.style.color = '#dedede';
-}
+     function letThereBeDark(){
+      document.body.style.backgroundColor = "#121212";
+      document.body.style.color = '#dedede';
+     }
      </script>
    </body> 
 </html>
