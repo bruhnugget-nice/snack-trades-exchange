@@ -45,7 +45,7 @@
      </div>
      <script>
        var lightButton=document.getElementById("light");
-       var lightButton=document.getElementById("dark");
+       var darkButton=document.getElementById("dark");
        var onLightClick=function(){
          document.body.style.backgroundColor="#dedede";
          document.body.style.color="#121212";
@@ -56,7 +56,8 @@
          document.body.style.color="#dedede";
          alert("Finally, inner peace. - Master Oogway");
        }
-       
+       lightButton.addEventListener("click", onLightClick);
+       darkButton.addEventListener("click", onDarkClick);
      </script>
    </body> 
 </html>
