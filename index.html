@@ -30,16 +30,32 @@
      <div id="heading">
        <h1 align="center" id="main">The International Snack Trades Exchange</h1>
      </div>
+     <div id= center>
+      <p id="mode">Choose your mode:</p><br>
+       <button id="light">Light Mode</button> <button id="dark">Dark Mode</button>
+     </div>
      <!--ABOUT-->
      <p>Hello, and welcome to the The International Snack Trades Exchange! 
      <br> This website was created solely for the purpose of listing out good exchange rates for snacks(just in case you want to reference them at lunchtime).
-     <br> The website is currently under development right now, so do not expect much right now.<p><br><br>
+     <br> The website is currently under development right now, so do not expect much right now.<p> <br><br>
      <div id="convert" align="center">
        <h2>Converting Section.</h2>
        <label for="fname">The amount of the snack.</label>
        <input type="text" id="fname" name="fname"><br>
      </div>
      <script>
+       var lightButton=document.getElementById("light");
+       var lightButton=document.getElementById("dark");
+       var onLightClick=function(){
+         document.body.style.backgroundColor="#dedede";
+         document.body.style.color="#121212";
+         alert("Look, I don't know why you would do this, but just to tell you, you really should switch over to the dark side.");
+       }
+       var onDarkClick=function(){
+         document.body.style.backgroundColor="#121212";
+         document.body.style.color="#dedede";
+         alert("Finally, inner peace. - Master Oogway");
+       }
        
      </script>
    </body> 
