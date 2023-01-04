@@ -30,9 +30,16 @@
      <div id="heading">
        <h1 align="center" id="main">The International Snack Trades Exchange</h1>
      </div>
-     <div id= center align="center">
-      <p id="mode">Choose your mode.</p><br>
-       <button id="light">Light Mode</button> <button id="dark">Dark Mode</button>
+     <div id= "theme" align="center">
+       <label>Please select a theme
+      <select id="theme-picker">
+        <option value="light">Light mode.</option>
+        <option value="dark">Dark mode.</option>
+        <option value="tabularasa">TABULA RASA.</option>
+        <option value="void">THE VOID.</option>
+      </select>
+       </label>
+      <button id="themeChanger">Execute changes in theme.</button>
      </div>
      <!--ABOUT-->
      <p>Hello, and welcome to the The International Snack Trades Exchange! 
@@ -44,20 +51,38 @@
        <input type="text" id="fname" name="fname"><br>
      </div>
      <script>
-       var lightButton=document.getElementById("light");
-       var darkButton=document.getElementById("dark");
-       var onLightClick=function(){
-         document.body.style.backgroundColor="#dedede";
-         document.body.style.color="#121212";
-         alert("Look, I don't know why you would do this, but just to tell you, you really should switch over to the dark side.");
+       //THEME DRAMA
+       //Gets the theme button element.
+       var themeButton=document.getElementById("themeChanger");
+       var headingDiv=document.getElementById("heading");
+       //The function given to the button for updating the theme.
+       var onThemeButtonClick=function(){
+         var theme=document.getElementById("theme-picker").value;
+         if(theme==="light"){
+           alert("Look, I don't know why you would do this, but just to tell you, you really should switch over to the dark side.");
+            document.body.style.backgroundColor="#dedede";
+            document.body.style.color="#121212";
+         }else if(theme==="dark"){
+           alert("Finally, inner peace.");
+           document.body.style.backgroundColor="#121212";
+           document.body.style.color="#dedede";
+         }else if(theme==="tabularasa"){
+           alert("John Locke.mp4");
+           document.body.style.backgroundColor="#121212";
+           document.body.style.color="#121212";
+           headingDiv.style.backgroundColor="#121212";
+         }else if(theme==="void"){
+           alert("Void");
+           document.body.style.backgroundColor="#dedede";
+           document.body.style.color="#dedede";
+           headingDiv.style.backgroundColor="#dedede";
+         }else{
+           alert("...");
+         }
        }
-       var onDarkClick=function(){
-         document.body.style.backgroundColor="#121212";
-         document.body.style.color="#dedede";
-         alert("Finally, inner peace. - Master Oogway");
-       }
-       lightButton.addEventListener("click", onLightClick);
-       darkButton.addEventListener("click", onDarkClick);
+       //Gives the button the onThemeButtonClick function.
+       themeButton.addEventListener("click", onThemeButtonClick);
+       //OTHER STUFF
      </script>
    </body> 
 </html>
