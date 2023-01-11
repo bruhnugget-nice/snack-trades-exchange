@@ -69,10 +69,10 @@
        <!---->
        <p>Please input the snack that you are converting to.</p>
        <select id="snackTo">
-        <option value="oreo">Oreos.</option>
-        <option value="taki">Takis.</option>
-        <option value="twinkie">Twinkies.</option>
-        <option value="welch">Welch's fruit gummies(in packets).</option>
+        <option value="oreoTo">Oreos.</option>
+        <option value="takiTo">Takis.</option>
+        <option value="twinkieTo">Twinkies.</option>
+        <option value="welchTo">Welch's fruit gummies(in packets).</option>
       </select>
        <br>
      <h4></h4>
@@ -125,11 +125,10 @@
         var snackFrom= document.getElementById("snackFrom").value;
         var amount=document.getElementById("amount").value;
         var snackTo= document.getElementById("snackTo").value;
-        if(snackFrom==="oreo" && snackTo="taki"){
+        if(snackFrom==="oreo" && snackTo="takiTo"){
           var amountToInt=parseInt(amount);
           var newAmount=amountToInt*3;
-          var newAmountToString=newAmount.toString();
-          output.textContent=amount+ " Oreos are equal to " + newAmountToString + " Takis.";
+          output.textContent=amount+ " Oreos are equal to " + newAmount + " Takis.";
         }
        }
        
