@@ -57,7 +57,7 @@
        <label for="fname">Please input the snack that you are converting from.</label>
        <select id="snackFrom">
         <option value="oreo">Oreos.</option>
-        <option value="taki">Takis.</option>
+        <option value="taki">Takis(Fuego).</option>
         <option value="twinkie">Twinkies.</option>
         <option value="welch">Welch's fruit gummies(in packets).</option>
       </select>
@@ -70,7 +70,7 @@
        <p>Please input the snack that you are converting to.</p>
        <select id="snackTo">
         <option value="oreoTo">Oreos.</option>
-        <option value="takiTo">Takis.</option>
+        <option value="takiTo">Takis(Fuego).</option>
         <option value="twinkieTo">Twinkies.</option>
         <option value="welchTo">Welch's fruit gummies(in packets).</option>
       </select>
@@ -126,7 +126,34 @@
         if(snackFrom==="oreo" && snackTo==="takiTo"){
           var amountToInt=parseInt(amount);
           var newAmount=amountToInt*3;
-          output.innerHTML=amountToInt+ " Oreos are equal to " + newAmount + " Takis.";
+          output.innerHTML=amountToInt+ " Oreos are/is equal to " + newAmount + " Taki(s).";
+        }else if(snackFrom===snackTo){
+          output.innerHTML="Look, they are the same amount.";
+        }else if(snackFrom==="oreo" && snackTo==="twinkieTo"){
+          var amountToInt=parseInt(amount);
+          var newAmount=amountToInt*3;
+          output.innerHTML=amountToInt+ " Oreos are/is equal to " + newAmount + " Twinkie(s).";
+        }else if(snackFrom==="oreo" && snackTo==="welchTo"){
+          var amountToInt=parseInt(amount);
+          var newAmount=amountToInt*5;
+          output.innerHTML=amountToInt+ " Oreos are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
+        }else if(snackFrom==="taki" && snackTo==="oreoTo"){
+          var amountToInt=parseInt(amount);
+          var newAmount=amountToInt/3;
+          output.innerHTML=amountToInt+ " Takis(Fuego) are/is equal to " + newAmount + " Oreo(s).";
+        }else if(snackFrom==="taki" && snackTo==="twinkieTo"){
+          var amountToInt=parseInt(amount);
+          var newAmount=amountToInt*8;
+          output.innerHTML=amountToInt+ " Takis(Fuego) are/is equal to " + newAmount + " Twinkie(s).";
+        }else if(snackFrom==="taki" && snackTo==="welchTo"){
+          var amountToInt=parseInt(amount);
+          var newAmount=amountToInt*15;
+          output.innerHTML=amountToInt+ " Takis(Fuego) are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
+        }else if(snackFrom==="twinkie" && snackTo==="welchTo"){
+          var amountToInt=parseInt(amount);
+          output.innerHTML=amountToInt+ " Twinkies are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
+        }else{
+          
         }
        }
        
