@@ -43,7 +43,7 @@
                 var amountToInt = parseInt(amount);
                 var newAmount = amountToInt * 3;
                 output.innerHTML = amountToInt + " Oreos are/is equal to " + newAmount + " Taki(s).";
-            } else if (snackFrom === snackTo) {
+            } else if ((snackFrom==="oreo" && snackTo==="oreoTo") || (snackFrom==="taki" && snackTo==="takiTo") || (snackFrom==="twinkie" && snackTo==="twinkieTo") || (snackFrom==="welch" && snackTo==="welchTo")) {
                 output.innerHTML = "Look, they are the same amount.";
             } else if (snackFrom === "oreo" && snackTo === "twinkieTo") {
                 var amountToInt = parseInt(amount);
