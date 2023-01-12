@@ -78,9 +78,7 @@
      <h4></h4>
      <button id="convertButton">Convert now.</button>
      <h3></h3>
-     <div id="results" align="center">
-       
-     </div>
+     <h3 id="results"></h3>
      </div>
       <!-- -->
      <script>
@@ -125,10 +123,10 @@
         var snackFrom= document.getElementById("snackFrom").value;
         var amount=document.getElementById("amount").value;
         var snackTo= document.getElementById("snackTo").value;
-        if(snackFrom==="oreo" && snackTo="takiTo"){
+        if(snackFrom==="oreo" && snackTo==="takiTo"){
           var amountToInt=parseInt(amount);
           var newAmount=amountToInt*3;
-          output.textContent=amount+ " Oreos are equal to " + newAmount + " Takis.";
+          output.innerHTML=amountToInt+ " Oreos are equal to " + newAmount + " Takis.";
         }
        }
        
