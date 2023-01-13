@@ -47,29 +47,50 @@
                 output.innerHTML = "Look, they are the same amount.";
             } else if (snackFrom === "oreo" && snackTo === "twinkieTo") {
                 var amountToInt = parseInt(amount);
-                var newAmount = amountToInt/3;
+                var newAmount = amountToInt/5;
                 output.innerHTML = amountToInt + " Oreos are/is equal to " + newAmount + " Twinkie(s).";
             } else if (snackFrom === "oreo" && snackTo === "welchTo") {
                 var amountToInt = parseInt(amount);
-                var newAmount = amountToInt * 5;
+                var newAmount = amountToInt/5;
                 output.innerHTML = amountToInt + " Oreos are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
             } else if (snackFrom === "taki" && snackTo === "oreoTo") {
                 var amountToInt = parseInt(amount);
-                var newAmount = amountToInt / 3;
-                output.innerHTML = amountToInt + " Takis(Fuego) are/is equal to " + newAmount + " Oreo(s).";
+                var newAmount = amountToInt/3;
+                output.innerHTML = amountToInt + " Taki are/is equal to " + newAmount + " Oreo(s)";       
             } else if (snackFrom === "taki" && snackTo === "twinkieTo") {
                 var amountToInt = parseInt(amount);
-                var newAmount = amountToInt * 8;
-                output.innerHTML = amountToInt + " Takis(Fuego) are/is equal to " + newAmount + " Twinkie(s).";
+                var newAmount = amountToInt/15;
+                output.innerHTML = amountToInt + " Taki are/is equal to " + newAmount + " Twinkie(s)";       
             } else if (snackFrom === "taki" && snackTo === "welchTo") {
                 var amountToInt = parseInt(amount);
-                var newAmount = amountToInt * 15;
-                output.innerHTML = amountToInt + " Takis(Fuego) are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
+                var newAmount = amountToInt/15;
+                output.innerHTML = amountToInt + " Taki are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";       
+            } else if (snackFrom === "twinkie" && snackTo === "oreoTo") {
+                var amountToInt = parseInt(amount);
+                var newAmount = amountToInt*3;
+                output.innerHTML = amountToInt + " Twinkie(s) are/is equal to " + newAmount + " Oreo(s)";    
+            } else if (snackFrom === "twinkie" && snackTo === "takiTo") {
+                var amountToInt = parseInt(amount);
+                var newAmount = amountToInt*15;
+                output.innerHTML = amountToInt + " Twinkie(s) are/is equal to " + newAmount + "Taki(s).";    
             } else if (snackFrom === "twinkie" && snackTo === "welchTo") {
                 var amountToInt = parseInt(amount);
-                output.innerHTML = amountToInt + " Twinkies are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";
-            } else {
-
+                var newAmount = amountToInt*1;
+                output.innerHTML = amountToInt + " Twinkie(s) are/is equal to " + newAmount + " Welch's Fruit Gummies.(in packet/packets)";    
+            } else if (snackFrom === "welch" && snackTo === "oreoTo") {
+                var amountToInt = parseInt(amount);
+                var newAmount = amountToInt*5;
+                output.innerHTML = amountToInt + " Welch's Fruit Gummies.(in packet/packets) " + newAmount + " Oreo(s)";    
+            } else if (snackFrom === "welch" && snackTo === "takiTo") {
+                var amountToInt = parseInt(amount);
+                var newAmount = amountToInt*15;
+                output.innerHTML = amountToInt + " Welch's Fruit Gummies.(in packet/packets) " + newAmount + "Taki(s).";    
+            } else if (snackFrom === "welch" && snackTo === "twinkieTo") {
+                var amountToInt = parseInt(amount);
+                var newAmount = amountToInt*1;
+                output.innerHTML = amountToInt + " Welch's Fruit Gummies.(in packet/packets) " + newAmount + " Twinkie(s)";    
+            }else{
+                    
             }
         }
 
