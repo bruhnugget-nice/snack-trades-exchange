@@ -52,12 +52,18 @@ let convertButton = document.getElementById("convertButton"),
 const amounts = {
   oreo: {
     amount: 1, // oreo is the baseline
+    name: "Oreo(s)",
+    unit: " (in cookie(s))"
   },
   taki: {
     amount: 3, // takis are three times as much as oreos
+    name: "Taki(s) Fuego",
+    unit: " (in stick(s))",
   },
   twinkie: {
     amount: 0.2, // and so on ...
+    name: "Twinkie(s)",
+    unit: " (in packet(s))",
   },
   welch: {
     amount: 0.2,
