@@ -100,7 +100,7 @@ var convert = function () {
     if (isNaN(amountNum)) return `How can you have "${amount.value}" ${fromName}${fromUnit}?!`;
 
   // return the output
-  return `${amountNum} ${fromName}${fromUnit} is/are equal to ${newAmount} ${toName}${toUnit}`;
+  return `${amountNum} ${fromName}${fromUnit} is/are equal to ${newAmount} ${toName}${toUnit}.`;
 };
 
 convertButton.addEventListener("click", function () {
