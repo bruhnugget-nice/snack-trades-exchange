@@ -78,9 +78,9 @@ var convert = function () {
   if (from === to) return "Look, they are the same amount.";
 
   // if there is a unit, the unit. if there isn't, (s)
-  let fromUnit = amounts[from].unit || "(s)";
+  let fromUnit = amounts[from].unit || "(s).";
   // you get the idea
-  let toUnit = amounts[to].unit || "(s)";
+  let toUnit = amounts[to].unit || "(s).";
   let fromName = amounts[from].name || from;
   let toName = amounts[to].name || to;
 
