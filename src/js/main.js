@@ -71,9 +71,7 @@ const amounts = {
     unit: " (in packet(s))",
   },
   prawn: {
-    amount:0.1,
-    name: "Prawn Crackers",
-    unit: " (in packet(s))",
+    amount: 0.1,
   },
 };
 // rounding function because computers are bad at decimal math
