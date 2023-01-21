@@ -55,9 +55,24 @@ const amounts = {
     name: "Oreo(s)",
     unit: " (in cookie(s))"
   },
-  taki: {
+  takifuego: {
     amount: 3, // takis are three times as much as oreos
-    name: "Taki(s) Fuego",
+    name: "Takis(Fuego)",
+    unit: " (in stick(s))",
+  },
+  takiblue: {
+    amount: 3, // takis are three times as much as oreos
+    name: "Takis(Blue Heat)",
+    unit: " (in stick(s))",
+  },
+  takinitro: {
+    amount: 3, // takis are three times as much as oreos
+    name: "Takis(Nitro)",
+    unit: " (in stick(s))",
+  },
+  takifajitas: {
+    amount: 3, // takis are three times as much as oreos
+    name: "Takis(Crunchy Fajitas)",
     unit: " (in stick(s))",
   },
   twinkie: {
@@ -66,13 +81,25 @@ const amounts = {
     unit: " (in packet(s))",
   },
   welch: {
-    amount: 0.2,
+    amount: 0.2, //welch and twinkies are the same
     name: "Welch's Fruit Gummies",
     unit: " (in packet(s))",
   },
   prawn: {
-    amount: 0.1,
+    amount: 0.1, //prawn crackers are more expensive
+    name: "Prawn Crackers",
+    unit: " (in packet(s))",
   },
+  lays: {
+    amount: 0.125, //lays chips are less expensive
+    name: "Lays Chips(Original)",
+    unit: " (in bag(s))",
+  },
+  blackforest: {
+    amount: 0.2, //Copy of welch's ig
+    name: "Black Forest Gummies(Original)",
+    unit: "(in packet(s))",
+  }
 };
 // rounding function because computers are bad at decimal math
 function round(n, precision) {
