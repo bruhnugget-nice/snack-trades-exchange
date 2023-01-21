@@ -70,6 +70,11 @@ const amounts = {
     name: "Welch's Fruit Gummies",
     unit: " (in packet(s))",
   },
+  prawn: {
+    amount:0.1,
+    name: "Prawn Crackers",
+    unit: " (in packet(s))",
+  },
 };
 // rounding function because computers are bad at decimal math
 function round(n, precision) {
