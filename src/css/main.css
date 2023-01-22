@@ -21,9 +21,9 @@ body {
   color: green;
 }
 
-.dropdown:hover{
+.dropdownlist:hover{
   border: rgb(255, 0, 0) solid 1px;
   border-radius: 1px;
-  margin: 15px;
+  margin: 1px;
   box-shadow: 0px 0px 0px 1px rgb(63, 63, 63) inset;
 }
